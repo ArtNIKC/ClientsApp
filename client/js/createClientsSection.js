@@ -1,3 +1,4 @@
+import { addClientModal } from "./addClient.js";
 import { svgAddUser } from "./svg.js";
 
 // создаем секцию клиенты
@@ -57,6 +58,11 @@ export const createClientSection = () => {
     sortingDisplayActions.textContent = 'Действия';
     addUserBtn.textContent = 'Добавить клиента';
     addUserBtnSvg.innerHTML = svgAddUser;
+
+    // создаем событие для кнопки 
+    addUserBtn.addEventListener('click', () => {
+        document.body.append(addClientModal());
+    });
 
     // создаем таблицу
     main.append(section);
