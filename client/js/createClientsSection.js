@@ -59,7 +59,7 @@ export const createClientSection = () => {
     addUserBtn.textContent = 'Добавить клиента';
     addUserBtnSvg.innerHTML = svgAddUser;
 
-    // создаем событие для кнопки 
+    // создаем событие для кнопки (добавления клиента)
     addUserBtn.addEventListener('click', () => {
         document.body.append(addClientModal());
     });

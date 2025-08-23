@@ -12,7 +12,5 @@ export const addClientModal = () => {
     modal.append(modalContent);
     modalContent.append(createForm.modalClose, createForm.modalTitle, createForm.form);
 
-    return
-    modal
-    ;
+    return modal;
 }
